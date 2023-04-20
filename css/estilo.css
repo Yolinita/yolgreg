@@ -1,0 +1,129 @@
+ @font-face {
+     font-family: better;
+     src: url(../fuente/Better\ Together.ttf);
+ }
+
+ /* comentario*/
+
+
+
+ /* Propiedades para el menú*/
+
+
+ header {
+     background: linear-gradient( rgb(192, 158, 63), rgb(226, 199, 177) );
+     width: 150%;
+     position: fixed;
+     z-index: 72%;
+
+     /* Menu*/
+ }
+
+ nav {
+     float: left;
+ }
+
+
+ nav ul {
+     list-style: none;
+     overflow: hidden;
+ }
+
+ nav ul li {
+     float: left;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+ }
+
+ nav ul li a {
+     display: block;
+     padding: 5px;
+     color: rgb(173, 125, 66) (173, 96, 60, 0.849);
+     text-decoration: none;
+ }
+
+
+ nav ul li :hover {
+     background: rgb(199, 152, 81);
+ }
+
+
+ /* Propiedades del  logo*/
+
+ .imagen_logo {
+     border-style: none;
+     display: block;
+     margin: auto;
+ }
+
+
+ /* nombre inicial*/
+ h1 {
+     font-size: 75px;
+     font-weight: 500;
+     text-transform:lowercase;
+     font-family: better;
+     color: rgb(199, 152, 81);
+     text-align: center;
+
+
+ }
+
+ h3 {
+     color: rgb(66, 66, 63);
+     text-align: center;
+ }
+
+
+ h2 {
+
+     text-align: center;
+ }
+
+ /*parrafo*/
+
+ .parrafo {
+     color: rgb(136, 94, 4);
+
+ }
+
+ .parrafo {
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .table_galleta {
+     margin: 0 auto;
+     color: rgb(114, 105, 55);
+     text-align: center;
+     background-color: antiquewhite;
+ }
+
+ body {
+    background: -webkit-linear-gradient(180deg, rgb(187, 134, 74)  , rgb(228, 190, 121), rgb(221, 219, 210) );
+ }
+
+    
+ 
+
+ .table_Ingredientes {
+     margin: 0 auto;
+     background-color: antiquewhite;
+ }
+
+ /*pie de pagina*/
+ footer {
+     text-align: center;
+ }
+
+ #ids {
+     text-align: center;
+ }
+
+ .lista {
+     display: inline;
+ }
+
+ p {
+     text-align: center;
+ }
