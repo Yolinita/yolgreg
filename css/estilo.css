@@ -1,129 +1,269 @@
- @font-face {
-     font-family: better;
-     src: url(../fuente/Better\ Together.ttf);
- }
-
- /* comentario*/
+/* CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap');
 
 
 
- /* Propiedades para el menú*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/*para quitar los puntos a los items de lista*/
+ul {
+    list-style: none;
+}
+
+/*para que los enlaces hereden el color de texto y no tengan subrayado*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+
+}
 
 
- header {
-     background: linear-gradient( rgb(192, 158, 63), rgb(226, 199, 177) );
-     width: 150%;
-     position: fixed;
-     z-index: 72%;
+header {
+    background-color: #faf3eb;
+    color: #7a4f1d;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
 
-     /* Menu*/
- }
+nav {
+    width: 100%;
+    padding: 60px;
+}
 
- nav {
-     float: left;
- }
+/* Establecer un diseño flexible para las secciones */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+}
 
+#logo-yg {
+    margin-top: 1rem;
+    height: 100px;
+    width: 200px;
+    flex: auto;
+    justify-content: center;
+    align-items: start;
+    align-self: flex-start;
+}
 
- nav ul {
-     list-style: none;
-     overflow: hidden;
- }
+/* Establecer el tamaño de fuente y los márgenes en unidades relativas */
+h1,
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'alkatra', cursive;
+}
 
- nav ul li {
-     float: left;
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 16px;
- }
+p {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    color: #0f0f0f;
+}
 
- nav ul li a {
-     display: block;
-     padding: 5px;
-     color: rgb(173, 125, 66) (173, 96, 60, 0.849);
-     text-decoration: none;
- }
+footer {
+    background-color: #faf3eb;
+    font-family: cursive; 
+    text-align: center;
+     color: #7a4f1d;
+  }
 
+#boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a7795b;
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
 
- nav ul li :hover {
-     background: rgb(199, 152, 81);
- }
+/* Utilizar flexbox para ajustar el tamaño de la imagen de perfil */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#img-yg {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    margin-top: 90px;
+}
 
- /* Propiedades del  logo*/
+#contacto {
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: #dfbea8;
+}
 
- .imagen_logo {
-     border-style: none;
-     display: block;
-     margin: auto;
- }
+/* Establecer márgenes y rellenos en unidades relativas */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #f8e7d2;
+}
 
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
- /* nombre inicial*/
- h1 {
-     font-size: 75px;
-     font-weight: 500;
-     text-transform:lowercase;
-     font-family: better;
-     color: rgb(199, 152, 81);
-     text-align: center;
+.iconos-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    /* ancho fijo del contenedor de iconos */
+}
 
+.iconos {
+    margin: 0 10px;
+    /* margen entre los iconos */
+    height: 50px;
+    width: 50px;
+}
 
- }
+footer {
+    background-color: #faf3eb;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+    color: #7a4f1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
- h3 {
-     color: rgb(66, 66, 63);
-     text-align: center;
- }
+/* Establecer márgenes y rellenos específicos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
 
+    footer {
+        background-color: #faf3eb;
+        border-radius: 5px;
+        height: 50px;
+        text-align: center;
+        color: #724817;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
- h2 {
+    nav {
+        padding: 60px;
+        margin-top: 1rem;
+    }
 
-     text-align: center;
- }
+    #logo-yg {
+        margin-top: 0.5rem;
+        height: 80px;
+        width: 100px;
+        flex: auto;
+        justify-content: center;
+        align-items: start;
+        align-self: flex-start;
+    }
 
- /*parrafo*/
+    #img-yg {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
- .parrafo {
-     color: rgb(136, 94, 4);
+    h1,
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
 
- }
+    p {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #442b0f;
+    }
 
- .parrafo {
-     text-align: center;
-     font-weight: bold;
- }
+    #boton {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #a7795b;
+        color: #fbfbfb;
+        text-decoration: none;
+        font-size: 20px;
+        border-radius: 5px;
+    }
 
- .table_galleta {
-     margin: 0 auto;
-     color: rgb(114, 105, 55);
-     text-align: center;
-     background-color: antiquewhite;
- }
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
- body {
-    background: -webkit-linear-gradient(180deg, rgb(187, 134, 74)  , rgb(228, 190, 121), rgb(221, 219, 210) );
- }
+    .iconos-contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        /* ancho fijo del contenedor de iconos */
+    }
 
-    
- 
+    .iconos {
+        margin: 0 10px;
+        /* margen entre los iconos */
+        height: 50px;
+        width: 50px;
+    }
 
- .table_Ingredientes {
-     margin: 0 auto;
-     background-color: antiquewhite;
- }
+    #img-yg {
+        margin-top: 130px;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
 
- /*pie de pagina*/
- footer {
-     text-align: center;
- }
-
- #ids {
-     text-align: center;
- }
-
- .lista {
-     display: inline;
- }
-
- p {
-     text-align: center;
- }
+    main {
+        padding: 0.5rem;
+    }
+}
