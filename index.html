@@ -6,58 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yolgreg Gonzalez</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="imagenes/favicon2.png">
 </head>
 <!-- cuerpo de la página -->
 
-<body id="inicio">
+<body id="inicio" class="dark-mode">
 
-    <header id="arriba" class="para">
+    <header id="arriba" class="menu_principal">
+        <img id="logo-yg" src="../imagenes/Logoyg.png" alt="logo">
+        <!-- Menu -->
 
-        <img id="logo-yg" src="imagenes/logoyg.png" alt="logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <!-- Menu -->
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-lg"></i></button>
 
-        <!-- navegador -->
-        
-         <nav> 
-            <a href="#inicio">Inicio</a>
-            <a href="#contacto">Contacto</a>
+            <ul class="nav-list">
+
+                <li class="menu-item" id="menu-item"><a href="#inicio" class="active">Who I Am</a></li>
+                <li class="menu-item" id="menu-item"><a href="#proyecto" class="active">Soft Skills</a></li>
+                <li class="menu-item" id="menu-item"><a href="#contacto" class="active">Contact</a></li>
+            </ul>
+
         </nav>
+        
     </header>
+   
+
 
     <main>
-        <!-- cuerpo -->
-        <section id="inicio">
-            <div>
-                <img id="img-yg" src="imagenes/yolgreg.png" alt=""/>
+
+        <!-- sección de inicio -->
+        <section id="inicio" class="inicios">
+          
+
+            <!-- <input id="checkitem" type="checkbox" onclick="enableDarkMode()"> -->
+            <br> <br>
+           
+            <img id="img-yg" src="../imagenes/yolgregg.png" alt="" />
+            <br>
+            <div class="articulo">
+                <br>
+                <h2>¡Hola!</h2>
+                <h1> Soy Yolgreg (Yoli) González.</h1>
+
+                <p>
+                    "Soy desarrolladora web, mujer.
+                    Empezando abrirme camino en el área de la tecnología,
+                    área donde la mujer tiene poco espacio laboral y donde conseguir una oportunidad de entrar en una
+                    empresa es
+                    complejo. Además,
+                    me gusta estar siempre aprendiendo y desafiándome a mí misma, buscando nuevas formas de mejorar mis
+                    habilidades y conocimientos.
+                    Considero que la creatividad es esencial en todos los aspectos de la vida, tanto en el ámbito
+                    personal
+                    como
+                    profesional y me dedico a fomentarla en todo lo que hago.
+                    Me he abierto camino para encontrar la manera para formarme en el área tecnológica y teniendo fiel
+                    creencia
+                    en mí, lograré mi cometido"
+                </p>
+
+                <a id="boton" target="_blank" href="../cvtrabajo.pdf"> Mi CV</a>
+
             </div>
-            <h1> Hola! Soy Yolgreg (Yoli) González</h1>
-            <p>
-                "Soy una hermosa mujer tropical, nacida en la bella Isla de Margarita lugar que se encuentra en mi
-                Venezuela
-                querida,
-                hace menos de 4 años emigré a la Argentina con una maleta llena de sueños y ganas para abrirme camino en
-                el
-                área de la tecnología,
-                área donde la mujer tiene poco espacio laboral y donde conseguir una oportunidad de entrar en una
-                empresa es
-                difícil. Además,
-                me gusta estar siempre aprendiendo y desafiándome a mí misma, buscando nuevas formas de mejorar mis
-                habilidades y conocimientos.
-                Considero que la creatividad es esencial en todos los aspectos de la vida, tanto en el ámbito personal
-                como
-                profesional y me dedico a fomentarla en todo lo que hago.
-                Me he abierto camino para encontrar la manerapara formarme en el área tecnológica y teniendo fiel
-                creencia
-                en mí, lograré mi cometido"
-            </p>
-            <a id="boton" target="_blank" href="cvtrabajo.pdf">Conoce mi CV</a>
         </section>
 
-        <hr>
-        <br>
-        <br>
+
+        <!-- sección de proyecto -->
+
+        <section id="proyecto" class="proyectos">
+            <h2>Soft Skills</h2>
+            <ul class="habilidades">
+                <a class="contenedor-habilidades">Siempre dispuesta al aprendizaje</a>
+                <a class="contenedor-habilidades">Creativa</a>
+                <a class="contenedor-habilidades">Resolutiva</a>
+                <a class="contenedor-habilidades">Adaptable</a>
+            </ul>
+        </section>
+
+
+
         <!-- sección de contacto -->
-        <section id="contacto">
+        <section id="contacto" class="contactos">
             <h2> Hablemos!</h2>
             <p>
                 ¡Gracias! te propongo visualizar mi cv o ver mi portfolio para que te lleves una mejor idea de mis
@@ -65,30 +98,29 @@
                 y expericias en el ambito laboral y social.
             </p>
         </section>
-<!-- seccion de iconos -->
+
+        <!-- seccion de iconos -->
         <section class="contenedor">
-            <div class="iconos-contenedor">
-                <a href="mailto:yolgregonzalez1@gmail.com">
-                    <img class="iconos" src="imagenes/2250206.png" alt>
-                </a>
-                <a href="https://github.com/Yolinita">
-                    <img class="iconos" src="imagenes/1738773.png" alt>
-                </a>
-                <a href="https://www.instagram.com/yolgregnita/">
-                    <img class="iconos" src="imagenes/1225803.png" alt>
-                </a>
-            </div>
+            <a href="mailto:yolgregonzalez1@gmail.com">
+                <img class="iconos" src="../imagenes/2250206.png">
+            </a>
+            <a href="https://github.com/Yolinita">
+                <img class="iconos" src="/imagenes/1738773.png">
+            </a>
+            <a href="https://www.instagram.com/yolgregnita/">
+                <img class="iconos" src="/imagenes/1225803.png">
+            </a>
         </section>
 
     </main>
     <!-- pie de página -->
     <footer>
-        <div>
-            <p> Armado por: Yolgreg Gonzalez Matínez. </p>
-            <br> 
-        </div>
+        <h5> Developed By: Yolgreg Gonzalez Matínez. </h5>
+        <br>
+        <!-- <a href="#arriba">Volver</a> -->
     </footer>
 
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

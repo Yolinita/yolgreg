@@ -1,0 +1,437 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+main {
+    background-color: #faeee4;
+}
+
+/* Encabezado */
+#logo-yg {
+    max-width: 6em;
+   
+
+}
+/*vamos hacer el menu hamburguesa*/
+header{
+    display: flex;
+    height: 2em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(53, 31, 10, 0.1);
+
+}
+
+.menu_principal {
+    background-color: #d8d4d4;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 10rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fca897;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.4s;
+    /* Transición suave para el cambio de color */
+    padding: 0 25px;
+    /* Espacio horizontal entre los elementos del menú */
+    border-right: 2px solid #ccc;
+    /* Separador entre los elementos del menú */
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item a:hover {
+    color: #858585;
+    font-weight: bold;
+}  
+
+.menu-item:last-child a {
+    border-right: none;
+    /* Eliminar separador en el último elemento del menú */
+}
+
+.abrir-menu{
+    display: none;
+}
+.cerrar-menu{
+    display: none;
+}
+
+/* Sección de inicio */
+
+.inicios {
+    text-align: center;
+    padding: 100px;
+    margin: 20px;
+    border: 0
+}
+
+#img-yg {
+    height: 400px;
+    width: 400px;
+    border-radius: 60%;
+    margin: 100px;
+    float: left;
+}
+
+#boton {
+    display: inline-block;
+    padding: 35px;
+    background-color: #616060;
+    color: #fff;
+    text-decoration: double;
+    border-radius: 15px;
+}
+
+#boton:hover {
+    background-color: #afacac;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #696969;
+    text-align: center;
+    margin: 25px 5px;
+    height: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    color: #696969;
+    margin: 25px 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Sección de proyectos - Se editan las cajas de habilidades blandas*/
+
+.contenedor-habilidades {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    border: 3px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style:none;
+    display:inline-block; 
+    flex-wrap:nowrap ; 
+    
+}
+
+.contenedor-habilidades.resaltado {
+    background-color: #f8edeb;
+    color:#ffb5a7;
+  }
+
+ul .habilidades {
+    display:block; 
+    list-style-type: disc;
+}  
+
+
+.proyectos {
+    justify-content: center;
+    text-align: center;
+    padding: 4em;
+    margin: 5em;
+    border: 1px solid #bebcbc;
+    border-radius: 15px;
+    background-color: #ffe7d1;
+    box-shadow: 0 2px 4px rgba(53, 31, 10, 0.1);
+}
+
+/* Sección de contacto */
+.contactos {
+    justify-content: center;
+    text-align: center;
+    padding: 6em;
+    margin: 5em;
+    border: 1px solid #bebcbc;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(53, 31, 10, 0.1);
+    background-color:#ffe7d1 ;
+}
+
+/* Sección de iconos */
+.contenedor {
+    text-align: center;
+    padding: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color:#faeee4 ;
+}
+
+.iconos {
+    width: 6em;
+    margin: 5em;
+}
+
+/* Pie de página */
+footer {
+    background-color: #a5a1a0;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* Estilo para el parrafo */
+p {
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    color: #094639;
+    margin: 20px;
+    padding: 25px;
+    float: inline-end;
+
+}
+
+
+/* Estilos para dispositivos móviles y pantallas más pequeñas */
+@media screen and (max-width: 550px) {
+
+    /* Encabezado */
+    #arriba {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    input[type="checkbox"] {
+        right: 45%;
+    }
+
+    h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+    }
+
+    .menu-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-habilidades {
+        text-align: center;
+        font-size: 1em;
+        align-items: center;
+        font-weight: normal;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    h2 {
+        font-size: 32px ;
+    }
+    /* Sección de inicio */
+    #inicio {
+        padding: 50px 0;
+    }
+
+    /* Sección de proyectos */
+    #proyecto {
+        text-align: center;
+        padding: 4em;
+        margin: 1em;
+    }
+
+    /* Sección de contacto */
+    #contacto {
+        text-align: center;
+        padding: 1em;
+        margin:1em ;
+    }
+
+    /* Sección de iconos */
+    .contenedor {
+        padding: 50px 0;
+
+    }
+
+    #img-yg {
+        margin: 0;
+        overflow: auto;
+      
+
+    }
+
+    .articulo p {
+        text-align: center;
+        padding: 5px;
+    }
+
+    /*menu hamburguesa media*/
+    .menu ul  li {
+        justify-content: space-between;
+          
+            }
+
+    .abrir-menu, 
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: #333;
+        font-size: 2rem;
+    }
+    .cerrar-menu{
+        color: #000000;
+        font-weight: bold;
+        font-size: 2rem;
+        padding-right: 5rem;
+        align-items:center;
+        margin-top: 1rem;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        gap: 1.8rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        visibility: hidden;
+        opacity: 0; 
+   }
+
+   .nav.visible {
+    opacity: 1;
+    visibility: visible;
+   } 
+
+   .nav-list{
+    flex-direction:column;
+    align-items:center;
+    display: flex;
+    padding-top: 0;
+    margin-right: auto;
+    top: 0;
+    padding: 10rem;
+    background-color: #e4dede86;
+   }
+
+   .nav-list li a {
+    text-decoration: none;
+    color: #4a4d4c;
+}
+
+}
+.iconos {
+    margin: 1em;
+    padding: 2em;
+    width:5em ; 
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    #img-yg {
+        float: none;
+        width: 300px;
+        height: 300px;
+        overflow: auto;
+    }
+
+    .articulo h1 {
+        font-size: 48px;
+        font-style: oblique;
+       font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .articulo p {
+        text-align: center;
+        align-items: space-around;
+        flex-wrap: nowrap;
+        border-bottom: #b6ddc8;
+        padding: 25px;
+    }
+
+    .proyectos {
+        margin: 5em;
+        padding: 5em;
+
+    }
+
+    .contactos {
+        margin: 5em;
+        padding: 5em;
+        justify-content: center;
+    }
+
+
+    p {
+font-family: 'Times New Roman', Times, serif;
+
+    }
+
+
+    .contenedor-habilidades {
+        margin: 2em;
+        padding: 1em;
+
+    }
+}
